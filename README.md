@@ -17,3 +17,9 @@ sgr.totalSupply() //総発行量の確認
 sgr.balanceOf(web.eth.accounts[0]) //アカウント残高の確認
 sgr.transfer(web3.eth.accounts[1], 100) //送金
 
+
+//Development NWにデプロイ
+//注：Geth側でアンロックしていないと失敗するよ
+truffle migrate --network development
+
+
